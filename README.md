@@ -1,4 +1,4 @@
-El proyecto tiene una estrucutra de n-capas: Api, Application, Infrastructure y Dominio
+El proyecto tiene una estrucutra de n-capas: Api, Application, Infrastructure y Dominio. Se utiliza el patron repositorio y el patron de diseño mediaTR
 
 En la capa de dominio están las entidades y el contexto de la base de datos
 
