@@ -1,0 +1,1163 @@
+{
+	"info": {
+		"_postman_id": "8e1e5e3c-ee3f-45f1-8c30-5d6f3b767960",
+		"name": "Banco v1",
+		"description": "Lista del APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13426904"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Clientes",
+					"item": [
+						{
+							"name": "{Id}",
+							"item": [
+								{
+									"name": "/api/Clientes/:Id",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Clientes/:Id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Clientes",
+												":Id"
+											],
+											"variable": [
+												{
+													"key": "Id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Clientes/:Id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Clientes",
+														":Id"
+													],
+													"variable": [
+														{
+															"key": "Id",
+															"value": "<integer>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/api/Clientes/:Id",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Clientes/:Id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Clientes",
+												":Id"
+											],
+											"variable": [
+												{
+													"key": "Id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Clientes/:Id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Clientes",
+														":Id"
+													],
+													"variable": [
+														{
+															"key": "Id",
+															"value": "<integer>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/Clientes",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Clientes",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Clientes"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Clientes",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Clientes"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Clientes",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"Nombre\": \"<string>\",\n  \"Genero\": \"<string>\",\n  \"Edad\": \"<integer>\",\n  \"Identificacion\": \"<string>\",\n  \"Direccion\": \"<string>\",\n  \"Telefono\": \"<string>\",\n  \"ClienteId\": \"<string>\",\n  \"Contrasena\": \"<string>\",\n  \"Estado\": \"<boolean>\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Clientes",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Clientes"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Nombre\": \"<string>\",\n  \"Genero\": \"<string>\",\n  \"Edad\": \"<integer>\",\n  \"Identificacion\": \"<string>\",\n  \"Direccion\": \"<string>\",\n  \"Telefono\": \"<string>\",\n  \"ClienteId\": \"<string>\",\n  \"Contrasena\": \"<string>\",\n  \"Estado\": \"<boolean>\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Clientes",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Clientes"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Clientes",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"Id\": \"<integer>\",\n  \"Nombre\": \"<string>\",\n  \"Genero\": \"<string>\",\n  \"Edad\": \"<integer>\",\n  \"Identificacion\": \"<string>\",\n  \"Direccion\": \"<string>\",\n  \"Telefono\": \"<string>\",\n  \"ClienteId\": \"<string>\",\n  \"Contrasena\": \"<string>\",\n  \"Estado\": \"<boolean>\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Clientes",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Clientes"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Id\": \"<integer>\",\n  \"Nombre\": \"<string>\",\n  \"Genero\": \"<string>\",\n  \"Edad\": \"<integer>\",\n  \"Identificacion\": \"<string>\",\n  \"Direccion\": \"<string>\",\n  \"Telefono\": \"<string>\",\n  \"ClienteId\": \"<string>\",\n  \"Contrasena\": \"<string>\",\n  \"Estado\": \"<boolean>\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Clientes",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Clientes"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Cuentas",
+					"item": [
+						{
+							"name": "{Id}",
+							"item": [
+								{
+									"name": "/api/Cuentas/:Id",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuentas/:Id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuentas",
+												":Id"
+											],
+											"variable": [
+												{
+													"key": "Id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Cuentas/:Id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Cuentas",
+														":Id"
+													],
+													"variable": [
+														{
+															"key": "Id",
+															"value": "<integer>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/api/Cuentas/:Id",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuentas/:Id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuentas",
+												":Id"
+											],
+											"variable": [
+												{
+													"key": "Id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Cuentas/:Id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Cuentas",
+														":Id"
+													],
+													"variable": [
+														{
+															"key": "Id",
+															"value": "<integer>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/Cuentas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Cuentas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Cuentas"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuentas",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuentas"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Cuentas",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"IdCliente\": \"<integer>\",\n  \"NumeroCuenta\": \"<string>\",\n  \"TipoCuenta\": \"<string>\",\n  \"SaldoInicial\": \"<double>\",\n  \"Estado\": \"<boolean>\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Cuentas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Cuentas"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"IdCliente\": \"<integer>\",\n  \"NumeroCuenta\": \"<string>\",\n  \"TipoCuenta\": \"<string>\",\n  \"SaldoInicial\": \"<double>\",\n  \"Estado\": \"<boolean>\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuentas",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuentas"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Cuentas",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"Id\": \"<integer>\",\n  \"IdCliente\": \"<integer>\",\n  \"NumeroCuenta\": \"<string>\",\n  \"TipoCuenta\": \"<string>\",\n  \"SaldoInicial\": \"<double>\",\n  \"Estado\": \"<boolean>\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Cuentas",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Cuentas"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Id\": \"<integer>\",\n  \"IdCliente\": \"<integer>\",\n  \"NumeroCuenta\": \"<string>\",\n  \"TipoCuenta\": \"<string>\",\n  \"SaldoInicial\": \"<double>\",\n  \"Estado\": \"<boolean>\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Cuentas",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Cuentas"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Movimientos",
+					"item": [
+						{
+							"name": "{Id}",
+							"item": [
+								{
+									"name": "/api/Movimientos/:Id",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimientos/:Id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimientos",
+												":Id"
+											],
+											"variable": [
+												{
+													"key": "Id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Movimientos/:Id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Movimientos",
+														":Id"
+													],
+													"variable": [
+														{
+															"key": "Id",
+															"value": "<integer>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/api/Movimientos/:Id",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimientos/:Id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimientos",
+												":Id"
+											],
+											"variable": [
+												{
+													"key": "Id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Movimientos/:Id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Movimientos",
+														":Id"
+													],
+													"variable": [
+														{
+															"key": "Id",
+															"value": "<integer>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/Movimientos",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Movimientos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Movimientos"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimientos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimientos"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Movimientos",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"Id\": \"<integer>\",\n  \"IdCuenta\": \"<integer>\",\n  \"Fecha\": \"<dateTime>\",\n  \"TipoMovimiento\": \"<string>\",\n  \"Valor\": \"<double>\",\n  \"Saldo\": \"<double>\",\n  \"IdCuentaNavigation\": {\n    \"Id\": \"<integer>\",\n    \"IdCliente\": \"<integer>\",\n    \"NumeroCuenta\": \"<string>\",\n    \"TipoCuenta\": \"<string>\",\n    \"SaldoInicial\": \"<double>\",\n    \"Estado\": \"<boolean>\",\n    \"IdClienteNavigation\": {\n      \"Id\": \"<integer>\",\n      \"Nombre\": \"<string>\",\n      \"Genero\": \"<string>\",\n      \"Edad\": \"<integer>\",\n      \"Identificacion\": \"<string>\",\n      \"Direccion\": \"<string>\",\n      \"Telefono\": \"<string>\",\n      \"ClienteId\": \"<string>\",\n      \"Contrasena\": \"<string>\",\n      \"Estado\": \"<boolean>\",\n      \"Cuentas\": [\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n        },\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n        }\n      ]\n    },\n    \"Movimientos\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Movimiento detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Movimiento detected>\"\n      }\n    ]\n  }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Movimientos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Movimientos"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"Id\": \"<integer>\",\n  \"IdCuenta\": \"<integer>\",\n  \"Fecha\": \"<dateTime>\",\n  \"TipoMovimiento\": \"<string>\",\n  \"Valor\": \"<double>\",\n  \"Saldo\": \"<double>\",\n  \"IdCuentaNavigation\": {\n    \"Id\": \"<integer>\",\n    \"IdCliente\": \"<integer>\",\n    \"NumeroCuenta\": \"<string>\",\n    \"TipoCuenta\": \"<string>\",\n    \"SaldoInicial\": \"<double>\",\n    \"Estado\": \"<boolean>\",\n    \"IdClienteNavigation\": {\n      \"Id\": \"<integer>\",\n      \"Nombre\": \"<string>\",\n      \"Genero\": \"<string>\",\n      \"Edad\": \"<integer>\",\n      \"Identificacion\": \"<string>\",\n      \"Direccion\": \"<string>\",\n      \"Telefono\": \"<string>\",\n      \"ClienteId\": \"<string>\",\n      \"Contrasena\": \"<string>\",\n      \"Estado\": \"<boolean>\",\n      \"Cuentas\": [\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n        },\n        {\n          \"value\": \"<Circular reference to #/components/schemas/Cuenta detected>\"\n        }\n      ]\n    },\n    \"Movimientos\": [\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Movimiento detected>\"\n      },\n      {\n        \"value\": \"<Circular reference to #/components/schemas/Movimiento detected>\"\n      }\n    ]\n  }\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimientos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimientos"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Movimientos/PorClienteFechas",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Movimientos/PorClienteFechas?From=<dateTime>&To=<dateTime>&IdCliente=<integer>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Movimientos",
+										"PorClienteFechas"
+									],
+									"query": [
+										{
+											"key": "From",
+											"value": "<dateTime>"
+										},
+										{
+											"key": "To",
+											"value": "<dateTime>"
+										},
+										{
+											"key": "IdCliente",
+											"value": "<integer>"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimientos/PorClienteFechas?From=<dateTime>&To=<dateTime>&IdCliente=<integer>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimientos",
+												"PorClienteFechas"
+											],
+											"query": [
+												{
+													"key": "From",
+													"value": "<dateTime>"
+												},
+												{
+													"key": "To",
+													"value": "<dateTime>"
+												},
+												{
+													"key": "IdCliente",
+													"value": "<integer>"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Movimientos/Deposito",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"IdCuenta\": \"<integer>\",\n  \"Fecha\": \"<dateTime>\",\n  \"Valor\": \"<double>\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Movimientos/Deposito",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Movimientos",
+										"Deposito"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"IdCuenta\": \"<integer>\",\n  \"Fecha\": \"<dateTime>\",\n  \"Valor\": \"<double>\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimientos/Deposito",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimientos",
+												"Deposito"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Movimientos/Retiro",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"IdCuenta\": \"<integer>\",\n  \"Fecha\": \"<dateTime>\",\n  \"Valor\": \"<double>\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Movimientos/Retiro",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Movimientos",
+										"Retiro"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"IdCuenta\": \"<integer>\",\n  \"Fecha\": \"<dateTime>\",\n  \"Valor\": \"<double>\"\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Movimientos/Retiro",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Movimientos",
+												"Retiro"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}
