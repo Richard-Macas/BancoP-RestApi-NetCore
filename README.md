@@ -1,6 +1,6 @@
 El proyecto tiene una estructura de n-capas: Api, Aplicación, Infraestructura y Dominio. 
 Se utiliza el patron repositorio y el patron de diseño mediaTR.
-Se utiliza Swagger para la documentación y prueba de los APIs
+Se utiliza Swagger para la documentación y para realizar pruebas de los APIs
 
 En la capa dominio están las entidades y el contexto de la base de datos
 
