@@ -11,6 +11,6 @@ En la capa aplicación se encuentran los commands, queries y handlers
 En la capa api están los endpoints
 
 ---------------------------------
-Se adiciona la colección de consulta para Postman y la base para SQL Server
+Se adiciona la colección de consulta para Postman y la base de datos para SQL Server
 
 # BancoP-RestApi-NetCore
